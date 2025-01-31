@@ -19,4 +19,4 @@ This project is a UI/UX prototype created in Figma, showcasing an intuitive and 
 
 📂 Project Files
 
-Figma Design Link (https://www.figma.com/design/bbLfkQZYhE1Ac7BcgdUbT5/AI-Health-Coach?node-id=1-5&t=D6rM8fg6CbBDzZ65-0)# 2301030400005
+Figma Design Link (https://www.figma.com/design/bbLfkQZYhE1Ac7BcgdUbT5/AI-Health-Coach?node-id=0-1&t=D6rM8fg6CbBDzZ65-1)# 2301030400005
