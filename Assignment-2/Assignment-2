@@ -1,1 +1,58 @@
+Step 1: Create a GitHub Repository
+1.	Go to GitHub and log in to your account.
+2.	Click on the "New" button to create a new repository.
+3.	Name the repository as your enrollment number: 2301030400005.
+4.	Set the repository to public or private, based on your preference.
+5.	Check the box "Add a README file" (optional).
+6.	Click "Create repository".
+________________________________________
+Step 2: Clone the Repository Locally
+1.	Open Git Bash or your command-line terminal.
+2.	Navigate to the location where you want to clone the repository using:
+bash
+CopyEdit
+cd path/to/your/folder
+3.	Clone the repository using:
+bash
+CopyEdit
+git clone https://github.com/your-username/2301030400005.git
+4.	Move into the repository folder:
+bash
+CopyEdit
+cd 2301030400005
+________________________________________
+Step 3: Create Folders for Assignments
+1.	Run the following commands to create folders:
+bash
+CopyEdit
+mkdir Assignment_1
+mkdir Assignment_2
+2.	Verify that the folders are created by running:
+bash
+CopyEdit
+ls
+________________________________________
+Step 4: Commit the Changes
+1.	Add the newly created folders to the staging area:
+bash
+CopyEdit
+git add .
+2.	Commit the changes with a message:
+bash
+CopyEdit
+git commit -m "Added Assignment_1 and Assignment_2 folders"
+3.	Push the changes to GitHub:
+bash
+CopyEdit
+git push origin main
+________________________________________
+Step 5: Verify on GitHub
+1.	Open your repository on GitHub.
+2.	Check if the Assignment_1 and Assignment_2 folders are visible.
+________________________________________
+Step 6: Document the Process
+1.	Open Microsoft Word or any text editor.
+2.	Write down all the steps above with screenshots if possible.
+3.	Save the document as Git_Instructions.docx.
+4.	Upload this file to your repository (optional).
 
