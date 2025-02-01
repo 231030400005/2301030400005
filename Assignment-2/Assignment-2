@@ -15,7 +15,7 @@ cd path/to/your/folder
 3.	Clone the repository using:
 bash
 CopyEdit
-git clone https://github.com/your-username/2301030400005.git
+git clone https://github.com/2301030400005/2301030400005.git
 4.	Move into the repository folder:
 bash
 CopyEdit
