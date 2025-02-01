@@ -1,4 +1,4 @@
-AI Health Coach
+CareAI
 
 An AI-powered health and wellness coach designed using Figma to provide personalized health recommendations, fitness tracking, and nutritional guidance.
 
