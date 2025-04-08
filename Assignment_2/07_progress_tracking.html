@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+        }
+        
+        .header {
+            text-align: center;
+            font-size: 42px;
+            font-weight: bold;
+            margin: 30px 0;
+            color: #3498db;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .metrics-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px 0;
+        }
+        
+        .metric-icon {
+            font-size: 100px;
+            text-align: center;
+        }
+        
+        .bar-chart {
+            color: #90ee90;  /* Light green */
+        }
+        
+        .line-chart {
+            color: #ff5733;  /* Coral/orange-red */
+        }
+        
+        .pie-chart {
+            color: #ffa500;  /* Orange */
+        }
+        
+        .badges-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+        }
+        
+        .badge {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            min-width: 180px;
+        }
+        
+        .reports-container {
+            margin: 30px 0;
+        }
+        
+        .report-card {
+            background-color: #d3d3d3;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .report-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .report-data {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Progress Tracking</h1>
+    
+    <div class="section">
+        <h2 class="section-title">Metrics :</h2>
+        <div class="metrics-container">
+            <div class="metric-icon bar-chart">
+                <svg viewBox="0 0 24 24" width="100" height="100" fill="currentColor">
+                    <rect x="4" y="12" width="4" height="8"/>
+                    <rect x="10" y="8" width="4" height="12"/>
+                    <rect x="16" y="10" width="4" height="10"/>
+                </svg>
+            </div>
+            <div class="metric-icon line-chart">
+                <svg viewBox="0 0 24 24" width="100" height="100" fill="currentColor">
+                    <path d="M3,16 L7,10 L11,14 L16,6 L21,16"/>
+                    <line x1="3" y1="20" x2="21" y2="20" stroke="currentColor" stroke-width="2"/>
+                    <line x1="3" y1="20" x2="3" y2="3" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </div>
+            <div class="metric-icon pie-chart">
+                <svg viewBox="0 0 24 24" width="100" height="100" fill="currentColor">
+                    <path d="M12,2 A10,10 0 1,1 12,22 A10,10 0 1,1 12,2 Z"/>
+                    <path d="M12,2 L12,12 L3,15" fill="white"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2 class="section-title">Milestone Badges :</h2>
+        <div class="badges-container">
+            <div class="badge">10 lbs Lost</div>
+            <div class="badge">5% Body Fat</div>
+            <div class="badge">30 Days Active</div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2 class="section-title">Weekly Reports :</h2>
+        <div class="reports-container">
+            <div class="report-card">
+                <h3 class="report-title">Week 1 Report</h3>
+                <p class="report-data">Weight: 150 lbs</p>
+                <p class="report-data">BMI: 24.5</p>
+                <p class="report-data">Activity: 5 day</p>
+            </div>
+            <div class="report-card">
+                <h3 class="report-title">Week 2 Report</h3>
+                <p class="report-data">Weight: 148 lbs</p>
+                <p class="report-data">BMI: 24.3</p>
+                <p class="report-data">Activity: 6 days</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

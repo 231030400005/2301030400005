@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Support - AI Health Coach</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+        }
+        
+        h1 {
+            font-size: 32px;
+            color: #3498db;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .faq-container {
+            margin-bottom: 40px;
+        }
+        
+        .faq-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px 20px;
+        }
+        
+        .faq-answer {
+            padding: 0 20px 15px;
+            color: #333;
+            line-height: 1.5;
+        }
+        
+        .contact-form {
+            margin-bottom: 40px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        
+        footer {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+        
+        .footer-links {
+            margin-top: 15px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact & Support</h1>
+        
+        <div class="faq-container">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How does the AI Health Coach personalize recommendations?</div>
+                <div class="faq-answer">Our AI analyzes your health data like age, weight, and fitness goals to offer customized workouts, nutrition plans, and daily tips. It adapts based on your progress for better recommendations.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I sync the AI Health Coach with my fitness tracker or smartwatch?</div>
+                <div class="faq-answer">Yes! It integrates with Fitbit, Apple Watch, and Google Fit to track steps, calories, heart rate, and sleep. This helps provide more accurate and personalized insights.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is my health data secure with the AI Health Coach?</div>
+                <div class="faq-answer">Absolutely! Your data is encrypted, securely stored, and follows strict privacy standards. You have full control over your data and can delete it anytime.</div>
+            </div>
+        </div>
+        
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="copyright">© 2025 Your AI Health Coach</div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Planner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            background-color: #d6e9ff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .planner-container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 40px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .planner-title {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #000;
+        }
+        
+        .section-desc {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .meal-item, 
+        .recipe-item {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .calorie-info {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        
+        .macro-box {
+            background-color: #3498db;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .macro-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .macro-item {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="planner-container">
+        <h1 class="planner-title">Nutrition Planner</h1>
+        
+        <div class="section">
+            <h2 class="section-title">Your Daily Meal Recommendations</h2>
+            <p class="section-desc">Based on your goals, here are your meal recommendations:</p>
+            
+            <div class="meal-item">Breakfast: Oatmeal with fruits</div>
+            <div class="meal-item">Lunch: Grilled salad</div>
+            <div class="meal-item">Dinner: Quinoa with steamed vegetables</div>
+            <div class="meal-item">Snack: Greek yogurt with honey</div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Calorie Tracker</h2>
+            <div class="calorie-info">Total Calories: 1500 kcal</div>
+            
+            <div class="macro-box">
+                <h3 class="macro-title">Macronutrient Breakdown</h3>
+                <div class="macro-item">Protein: 100 g</div>
+                <div class="macro-item">Carbohydrates: 200 g</div>
+                <div class="macro-item">Fats: 50 g</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Recipe Suggestions</h2>
+            <div class="recipe-item">Healthy smoothie</div>
+            <div class="recipe-item">Salad</div>
+            <div class="recipe-item">Baked salmon</div>
+        </div>
+    </div>
+</body>
+</html>

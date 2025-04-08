@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareAI - Login & Registration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1a0f0f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .auth-container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Login Panel */
+        .login-panel {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            color: #2196F3;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .panel-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .social-login {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .social-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .google-btn {
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .fb-btn {
+            background: #1877F2;
+        }
+
+        .twitter-btn {
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .divider {
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+            margin: 20px 0;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .input-field input {
+            border: none;
+            background: transparent;
+            flex: 1;
+            padding-left: 10px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .forgot-pwd {
+            text-align: right;
+            margin-bottom: 25px;
+        }
+
+        .forgot-pwd a {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .login-btn {
+            width: 100%;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: auto;
+        }
+
+        /* Welcome Panel */
+        .welcome-panel {
+            flex: 1;
+            background: linear-gradient(135deg, #64B5F6, #2196F3);
+            padding: 40px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .welcome-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .welcome-text {
+            font-size: 16px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .action-text {
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .action-btn {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 12px 40px;
+            border-radius: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .action-btn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Register Panel */
+        .register-panel {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (max-width: 1024px) {
+            .auth-container {
+                flex-direction: column;
+            }
+            .welcome-panel {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Login Section -->
+        <div class="login-panel">
+            <div class="logo">CareAI</div>
+            <h1 class="panel-title">Sign In to your account</h1>
+            
+            <div class="social-login">
+                <div class="social-btn google-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                        <path fill="#4285F4" d="M19.76 10.25c0-.63-.06-1.25-.16-1.85H10.1v3.55h5.42c-.24 1.15-.97 2.13-2.04 2.78v2.31h3.32c1.94-1.79 3.06-4.41 3.06-7.51z"/>
+                        <path fill="#34A853" d="M10.1 19.94c2.77 0 5.1-.9 6.8-2.45l-3.3-2.55a6.17 6.17 0 0 1-9.2-3.25H1.04v2.39a9.94 9.94 0 0 0 9.06 5.86z"/>
+                        <path fill="#FBBC05" d="M4.4 11.68a6.02 6.02 0 0 1 0-3.85V5.49H1.05a10.08 10.08 0 0 0 0 9.05l3.35-2.86z"/>
+                        <path fill="#EA4335" d="M10.1 3.88c1.5 0 2.85.51 3.92 1.51l2.94-2.92A9.96 9.96 0 0 0 10.1 0C6.16 0 2.76 2.3 1.05 5.5l3.34 2.6a6.02 6.02 0 0 1 5.7-4.2z"/>
+                    </svg>
+                </div>
+                <div class="social-btn fb-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="white">
+                        <path d="M18.9,0H1.1C0.5,0,0,0.5,0,1.1v17.8C0,19.5,0.5,20,1.1,20h9.6v-7.7H8.1v-3h2.6V7c0-2.6,1.6-4,3.9-4c1.1,0,2.1,0.1,2.3,0.1v2.7h-1.6c-1.3,0-1.5,0.6-1.5,1.5v1.9h3l-0.4,3h-2.6V20h5.1c0.6,0,1.1-0.5,1.1-1.1V1.1C20,0.5,19.5,0,18.9,0z"/>
+                    </svg>
+                </div>
+                <div class="social-btn twitter-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="black">
+                        <path d="M20.07 6.35a7.1 7.1 0 0 1-2.06.56 3.6 3.6 0 0 0 1.58-1.98c-.7.41-1.46.7-2.29.87a3.6 3.6 0 0 0-6.12 3.28 10.2 10.2 0 0 1-7.4-3.74 3.6 3.6 0 0 0 1.1 4.8 3.57 3.57 0 0 1-1.62-.45v.05a3.58 3.58 0 0 0 2.88 3.51c-.53.15-1.1.17-1.63.06a3.6 3.6 0 0 0 3.36 2.5A7.16 7.16 0 0 1 3 17.14a10.15 10.15 0 0 0 5.5 1.62c6.57 0 10.17-5.45 10.17-10.17 0-.15 0-.3-.01-.46a7.22 7.22 0 0 0 1.8-1.85l-.4.07z"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="divider">or Sign in with your email id</div>
+            
+            <div class="input-group">
+                <div class="input-field">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#777">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <input type="email" placeholder="Email address">
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <div class="input-field">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#777">
+                        <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/>
+                    </svg>
+                    <input type="password" placeholder="Password">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#777">
+                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="forgot-pwd">
+                <a href="#">Forgot Password?</a>
+            </div>
+            
+            <button class="login-btn">Sign In</button>
+        </div>
+        
+        <!-- Welcome Panel -->
+        <div class="welcome-panel">
+            <h2 class="welcome-title">Welcome Back!</h2>
+            <p class="welcome-text">Please Sign in to your account with the given details to continue</p>
+            <div class="action-text">Don't have an account? Sign Up</div>
+            <button class="action-btn">Sign Up</button>
+        </div>
+        
+        <!-- Hello Friend Panel -->
+        <div class="welcome-panel">
+            <h2 class="welcome-title">Hello Friend!</h2>
+            <p class="welcome-text">Please provide the information to register your account</p>
+            <div class="action-text">Already have an account? Sign In</div>
+            <button class="action-btn">Sign In</button>
+        </div>
+        
+        <!-- Register Panel -->
+        <div class="register-panel">
+            <h1 class="panel-title">Register a new account</h1>
+            
+            <div class="social-login">
+                <div class="social-btn google-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                        <path fill="#4285F4" d="M19.76 10.25c0-.63-.06-1.25-.16-1.85H10.1v3.55h5.42c-.24 1.15-.97 2.13-2.04 2.78v2.31h3.32c1.94-1.79 3.06-4.41 3.06-7.51z"/>
+                        <path fill="#34A853" d="M10.1 19.94c2.77 0 5.1-.9 6.8-2.45l-3.3-2.55a6.17 6.17 0 0 1-9.2-3.25H1.04v2.39a9.94 9.94 0 0 0 9.06 5.86z"/>
+                        <path fill="#FBBC05" d="M4.4 11.68a6.02 6.02 0 0 1 0-3.85V5.49H1.05a10.08 10.08 0 0 0 0 9.05l3.35-2.86z"/>
+                        <path fill="#EA4335" d="M10.1 3.88c1.5 0 2.85.51 3.92 1.51l2.94-2.92A9.96 9.96 0 0 0 10.1 0C6.16 0 2.76 2.3 1.05 5.5l3.34 2.6a6.02 6.02 0 0 1 5.7-4.2z"/>
+                    </svg>
+                </div>
+                <div class="social-btn fb-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="white">
+                        <path d="M18.9,0H1.1C0.5,0,0,0.5,0,1.1v17.8C0,19.5,0.5,20,1.1,20h9.6v-7.7H8.1v-3h2.6V7c0-2.6,1.6-4,3.9-4c1.1,0,2.1,0.1,2.3,0.1v2.7h-1.6c-1.3,0-1.5,0.6-1.5,1.5v1.9h3l-0.4,3h-2.6V20h5.1c0.6,0,1.1-0.5,1.1-1.1V1.1C20,0.5,19.5,0,18.9,0z"/>
+                    </svg>
+                </div>
+                <div class="social-btn twitter-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="black">
+                        <path d="M20.07 6.35a7.1 7.1 0 0 1-2.06.56 3.6 3.6 0 0 0 1.58-1.98c-.7.41-1.46.7-2.29.87a3.6 3.6 0 0 0-6.12 3.28 10.2 10.2 0 0 1-7.4-3.74 3.6 3.6 0 0 0 1.1 4.8 3.57 3.57 0 0 1-1.62-.45v.05a3.58 3.58 0 0 0 2.88 3.51c-.53.15-1.1.17-1.63.06a3.6 3.6 0 0 0 3.36 2.5A7.16 7.16 0 0 1 3 17.14a10.15 10.15 0 0 0 5.5 1.62c6.57 0 10.17-5.45 10.17-10.17 0-.15 0-.3-.01-.46a7.22 7.22 0 0 0 1.8-1.85l-.4.07z"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="divider">or register with your email id</div>
+            
+            <div class="input-group">
+                <div class="input-field">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#777">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                    <input type="text" placeholder="Username">
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <div class="input-field">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#777">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <input type="email" placeholder="Email address">
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <div class="input-field">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#777">
+                        <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/>
+                    </svg>
+                    <input type="password" placeholder="Password">
+                </div>
+            </div>
+            
+            <button class="login-btn">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
